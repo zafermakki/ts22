@@ -1,0 +1,45 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About Me",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title1": "CREATIVE UI",
+    "title2": "DESIGNER",
+    "hire": "Hire me",
+    "download": "Download CV"
+  },
+  "about": {
+    "title": "About",
+    "titleHighlight": "me",
+    "readMore": "Read more",
+    "readLess": "Read less"
+  },
+  "works": {
+    "recent": "My recent",
+    "works": "works"
+    },
+    "contact": {
+      "title": "Got a project in",
+      "titleHighlight": "mind?",
+      "nameLabel": "Your name",
+      "namePlaceholder": "Name",
+      "emailLabel": "Your email",
+      "emailPlaceholder": "Email",
+      "messageLabel": "Your message",
+      "messagePlaceholder": "Message",
+      "send": "Send Message"
+    },
+    "footer": {
+      "home": "Home",
+      "about": "About me",
+      "contact": "Contact",
+      "terms": "Terms of Service",
+      "privacy": "Privacy Policy"
+    },
+  "lang": {
+    "de": "DE",
+    "en": "EN"
+  }
+}

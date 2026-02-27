@@ -1,0 +1,45 @@
+{
+  "nav": {
+    "home": "Startseite",
+    "about": "Über mich",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "title1": "KREATIVER UI",
+    "title2": "DESIGNER",
+    "hire": "Stellen Sie mich ein",
+    "download": "Lebenslauf herunterladen"
+  },
+  "about": {
+    "title": "Über",
+    "titleHighlight": "mich",
+    "readMore": "Mehr lesen",
+    "readLess": "Weniger lesen"
+  },
+  "works": {
+    "recent": "Meine neuesten",
+    "works": "Projekte"
+    },
+    "contact": {
+      "title": "Haben Sie ein Projekt im",
+      "titleHighlight": "Sinn?",
+      "nameLabel": "Ihr Name",
+      "namePlaceholder": "Name",
+      "emailLabel": "Ihre E-Mail",
+      "emailPlaceholder": "E-Mail",
+      "messageLabel": "Ihre Nachricht",
+      "messagePlaceholder": "Nachricht",
+      "send": "Nachricht senden"
+    },
+    "footer": {
+      "home": "Startseite",
+      "about": "Über mich",
+      "contact": "Kontakt",
+      "terms": "Nutzungsbedingungen",
+      "privacy": "Datenschutz"
+    },
+  "lang": {
+    "de": "DE",
+    "en": "EN"
+  }
+}

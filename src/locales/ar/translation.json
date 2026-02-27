@@ -1,0 +1,46 @@
+{
+    "nav": {
+      "home": "الرئيسية",
+      "about": "من أنا",
+      "contact": "اتصل بي"
+    },
+    "hero": {
+      "title1": "مصمم واجهات",
+      "title2": "إبداعي",
+      "hire": "وظفني",
+      "download": "تحميل السيرة الذاتية"
+    },
+    "about": {
+      "title": "من",
+      "titleHighlight": "أنا",
+      "readMore": "اقرأ المزيد",
+      "readLess": "اقرأ أقل"
+    },
+    "works": {
+      "recent": "أحدث",
+      "works": "أعمالي"
+    },
+    "contact": {
+      "title": "هل لديك مشروع",
+      "titleHighlight": "في ذهنك؟",
+      "nameLabel": "اسمك",
+      "namePlaceholder": "الاسم",
+      "emailLabel": "بريدك الإلكتروني",
+      "emailPlaceholder": "البريد الإلكتروني",
+      "messageLabel": "رسالتك",
+      "messagePlaceholder": "الرسالة",
+      "send": "إرسال الرسالة"
+    },
+    "footer": {
+      "home": "الرئيسية",
+      "about": "من أنا",
+      "contact": "اتصل بي",
+      "terms": "شروط الخدمة",
+      "privacy": "سياسة الخصوصية"
+    },
+    "lang": {
+      "de": "DE",
+      "en": "EN",
+      "ar": "AR"
+    }
+  }
