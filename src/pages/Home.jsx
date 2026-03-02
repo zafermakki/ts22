@@ -9,7 +9,7 @@ import Footer   from "../components/Footer/Footer"
 import { Box } from "@mui/material";
 import VerticalLine from "../components/BackgroundLine/VerticalLine";
 
-const Home = () => {
+const Home = ({ toggleTheme, mode }) => {
 
     return(
         <Box 
@@ -23,7 +23,7 @@ const Home = () => {
         <VerticalLine left="29%" />
 
         <Box sx={{ position: "relative", zIndex: 2 }}>
-            <Navbar />
+            <Navbar toggleTheme={toggleTheme} mode={mode} />
             <Hero />
             <About />
             <Works />

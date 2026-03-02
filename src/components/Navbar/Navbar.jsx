@@ -13,9 +13,13 @@ import {
 import MenuIcon from "@mui/icons-material/Menu";
 import { useTranslation } from "react-i18next";
 import i18n from "../../i18n";
+import LightModeIcon from "@mui/icons-material/LightMode";
+import DarkModeIcon from "@mui/icons-material/DarkMode";
+import { useTheme } from "@mui/material/styles";
 
-const Navbar = () => {
+const Navbar = ({ toggleTheme, mode }) => {
   const { t } = useTranslation();
+  const theme = useTheme();
 
   const changeToGerman = () => {
     i18n.changeLanguage("de");
@@ -80,6 +84,14 @@ const Navbar = () => {
               {t(item)}
             </Button>
           ))}
+          <IconButton
+            onClick={toggleTheme}
+            sx={{
+              color: theme.palette.text.primary,
+            }}
+          >
+            {mode === "dark" ? <LightModeIcon /> : <DarkModeIcon />}
+          </IconButton>
         </Box>
 
         {/* Menu icon for mobile */}

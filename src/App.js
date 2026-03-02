@@ -1,15 +1,11 @@
 import { ThemeProvider, CssBaseline } from "@mui/material";
 import Home from "./pages/Home";
 import getTheme from "./theme/theme";
-
 import "./i18n";
-
 import { useTranslation } from "react-i18next";
-import { useMemo, useEffect } from "react";
-
+import { useMemo, useEffect, useState } from "react";
 import createCache from "@emotion/cache";
 import { CacheProvider } from "@emotion/react";
-
 import rtlPlugin from "stylis-plugin-rtl";
 import { prefixer } from "stylis";
 
@@ -19,10 +15,20 @@ function App() {
   const isRTL = i18n.language === "ar";
   const direction = isRTL ? "rtl" : "ltr";
 
-  // theme
-  const theme = useMemo(() => getTheme(direction), [direction]);
+  const [mode, setMode] = useState(() => {
+    return localStorage.getItem("themeMode") || "dark";
+  });
 
-  // cache RTL or LTR
+  const toggleTheme = () => {
+    setMode((prev) => {
+      const newMode = prev === "dark" ? "light" : "dark";
+      localStorage.setItem("themeMode", newMode);
+      return newMode;
+    });
+  };
+
+  const theme = useMemo(() => getTheme(direction, mode), [direction, mode]);
+
   const cache = useMemo(
     () =>
       createCache({
@@ -32,7 +38,6 @@ function App() {
     [isRTL]
   );
 
-  // change HTML dir
   useEffect(() => {
     document.documentElement.dir = direction;
   }, [direction]);
@@ -41,7 +46,9 @@ function App() {
     <CacheProvider value={cache}>
       <ThemeProvider theme={theme}>
         <CssBaseline />
-        <Home />
+
+        <Home toggleTheme={toggleTheme} mode={mode} />
+
       </ThemeProvider>
     </CacheProvider>
   );
