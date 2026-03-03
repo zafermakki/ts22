@@ -124,6 +124,13 @@ const Navbar = ({ toggleTheme, mode }) => {
           }}
         >
           {/* Language buttons in menu (mobile/medium) */}
+          <MenuItem onClick={toggleTheme} 
+            sx={{
+                color: theme.palette.text.primary,
+            }}
+          > 
+            {mode === "dark" ? <LightModeIcon /> : <DarkModeIcon />}
+          </MenuItem>
           <MenuItem onClick={() => { changeToGerman(); handleCloseMenu(); }}>
             {t("DE")}
           </MenuItem>
