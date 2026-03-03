@@ -60,7 +60,7 @@ const Navbar = ({ toggleTheme, mode }) => {
         <Typography
           fontWeight="bold"
           fontSize={18}
-          sx={{ fontFamily: "Oswald, sans-serif" }}
+          sx={{ fontFamily: "Oswald, sans-serif",color:"#fff" }}
         >
           SaulDesign
         </Typography>

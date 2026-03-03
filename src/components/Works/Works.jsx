@@ -23,7 +23,10 @@ const Works = () => {
         mx: "auto",
         position: "relative",
         overflow: "hidden",
-        backgroundColor: "#222831",
+        backgroundColor: (theme) =>
+        theme.palette.mode === "dark"
+          ? "#000"
+          : "#222831",
         px: { xs: 2, sm: 4, md: 8 },
         py: { xs: 6, md: 10 },
         display: "flex",
